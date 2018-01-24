@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style: none;
+}
+.carousel{
+	
+	position: relative;
+	width: 670px;
+	height: 280px;
+	overflow: hidden;
+}
+.carousel .img-ct{
+	/*position: relative;*/
+	height: 280px;
+	width:3350px;
+	position: absolute;
+	
+}
+.carousel .img-ct:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.carousel .img-ct li{
+	/*position: absolute;*/
+	float: left;
+}
+.carousel .img-ct img{
+	width: 670px;
+	height: 280px;
+	/*position: absolute;*/
+}
+.carousel .btn{
+	width: 30px;
+	height: 30px;
+	border-radius: 50Px;
+	background-color:#333;
+	opacity: 0.6;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	font-size:24px;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+}
+.carousel .btn-pre{
+	left: 10px;
+}
+.carousel .btn-next{
+	right: 10px;
+}
+.carousel .bullet{
+	/*display: block;
+	position: absolute;
+	clear: both;
+	top: 90%;
+	left: 335px;
+	margin-left: -52px;*/
+	display: inline-block;
+}
+.carousel .bullet-ct{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.carousel .bullet>li{
+	display: inline-block;
+	width: 30px;
+	height: 6px;
+	background-color: white;
+	border-radius: 3px;
+	float: left;
+	margin-right: 5px;
+}
+.carousel .bullet .active{
+	background-color: cyan;
+}
